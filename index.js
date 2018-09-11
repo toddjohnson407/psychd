@@ -85,7 +85,7 @@ var jsonPayload = JSON.stringify({
 
 //make headers for post request
 var headers = {
-    "Content-Type": "application/json",
+    "Content-Type": "application/x-www-form-urlencoded",
     "Cookie":
      "BHBrowserCheck=1; "
     +"bhdomain=onyx103423; "
@@ -109,7 +109,7 @@ var fetchJSON = {
     body: JSON.stringify(jsonPayload)
 }
 
-var url = "http://www.macmillanhighered.com/externalcontent/learningcurve.bfwpub.com/api/v1/analytics/log_analytics.php";
+var url = "http://www.macmillanhighered.com/launchpad/schacter4e/8466914/Sco/PutStudentScoData";
 
 fetch(url, fetchJSON)
     .then(res => console.log(res.status));
